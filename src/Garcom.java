@@ -62,4 +62,13 @@ public class Garcom {
     public Balcao getBalcao() {
         return balcao;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    // Nome do estado atual (ex.: "AnotandoPedido"), usado pela tela visual
+    public String getNomeEstado() {
+        return maquina.getNomeEstadoAtual();
+    }
 }

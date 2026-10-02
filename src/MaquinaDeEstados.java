@@ -32,4 +32,9 @@ public class MaquinaDeEstados<T> {
     public Estado<T> getEstadoAtual() {
         return estadoAtual;
     }
+
+    // Nome do estado atual como texto (usado pela tela visual)
+    public String getNomeEstadoAtual() {
+        return estadoAtual.getClass().getSimpleName();
+    }
 }

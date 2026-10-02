@@ -33,4 +33,13 @@ public class Balcao {
     public void pegarPrato() {
         pratos--;
     }
+
+    // ----- Getters (usados pela tela visual) -----
+    public int getPedidos() {
+        return pedidos;
+    }
+
+    public int getPratos() {
+        return pratos;
+    }
 }

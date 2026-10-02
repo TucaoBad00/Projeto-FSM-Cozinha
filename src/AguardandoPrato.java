@@ -11,10 +11,13 @@ public class AguardandoPrato implements Estado<Garcom> {
     @Override
     public void executar(Garcom garcom) {
         // Condição de saída: tem prato pronto no balcão?
-        if (garcom.getBalcao().temPrato()) {
+        if (garcom.getBalcao().temPrato())
+        {
             garcom.getBalcao().pegarPrato();
             garcom.mudarEstado(new ServindoPrato());
-        } else {
+        }
+        else 
+        {
             garcom.falar("Esperando no balcão...");
         }
     }
